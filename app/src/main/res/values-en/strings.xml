@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="boton_aceptar">Confirm</string>
+    <string name="boton_cancelar">Cancel</string>
+    <string name="toolbar">-Activity2</string>
+    <string name="btn_sumar">Add</string>
+    <string name="btn_ocultar">Hide</string>
+    <string name="btn_restar">subtract</string>
+    <string name="btn_convertir">Convert</string>
+    <string name="txtConversor1">Currency Converter</string>
+    <string name="txtConversor2">Select a currency</string>
+    <string name="txtConversorResultado">Result</string>
+    <string name="txtConversorIngresarMonto">Enter Amount In Pesos</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="boton_cancelar">Caceliu</string>
+    <string name="boton_aceptar">Aprobe</string>
+    <string name="toolbar">-Activité2</string>
+    <string name="btn_sumar">Ajouter</string>
+    <string name="btn_ocultar">Cacher</string>
+    <string name="btn_restar">Soustraire</string>
+    <string name="btn_convertir">Changer</string>
+    <string name="txtConversor1">Convertisseur de devises</string>
+    <string name="txtConversor2">Sélectionnez une devise</string>
+    <string name="txtConversorResultado">Résultat</string>
+    <string name="txtConversorIngresarMonto">Entrez le montant en pesos</string>
+</resources>

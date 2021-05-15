@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="toolbar">-Actividad2</string>
+    <string name="btn_sumar">Sumar</string>
+    <string name="btn_ocultar">Ocultar</string>
+    <string name="btn_restar">Restar</string>
+    <string name="btn_convertir">Convertir</string>
+    <string name="txtConversor1">Conversor moneda</string>
+    <string name="txtConversor2">Seleccione una moneda</string>
+    <string name="txtConversorIngresarMonto">Ingrese Monto En Pesos</string>
+    <string name="txtConversorResultado">Resultado</string>
+    <string name="btnZoomMas" translatable="false">Zoom+</string>
+    <string name="btnZoomMenos" translatable="false">Zoom-</string>
+    <string name="btnConversorReset" translatable="false">Reset</string>
+</resources>
