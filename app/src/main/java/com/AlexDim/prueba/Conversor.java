@@ -47,6 +47,14 @@ public class Conversor extends AppCompatActivity {
                 onRadioButtonClicked(v);
             }
         });
+
+        btnConversorReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pltxtConversorMonto.setText("");
+                pltxtConversorResultado.setText("");
+            }
+        });
     }
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
