@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AppActivity extends AppCompatActivity {
 
@@ -35,51 +36,76 @@ public class AppActivity extends AppCompatActivity {
         btnSumar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                count++;
-                txtResultado.setText(count);
+                sumar();
             }
         });
 
         btnRestar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                count--;
-                txtResultado.setText(count);
+                restar();
             }
         });
 
         btnZoomMas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sizeText++;
-                txtResultado.setTextSize(sizeText);
+                zoomMas();
             }
         });
 
         btnZoomMenos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sizeText--;
-                txtResultado.setTextSize(sizeText);
+                zoomMenos();
             }
         });
 
         btnOcultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                txtResultado.setVisibility(View.INVISIBLE);
+                ocultar();
             }
         });
 
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                count=0;
-                txtResultado.setText(count);
-                txtResultado.setTextSize(30);
-                txtResultado.setVisibility(View.VISIBLE);
+                reset();
             }
         });
 
+    }
+
+    private void sumar(){
+        count++;
+        txtResultado.setText(String.valueOf(count));
+    }
+    private void restar(){
+        if(count==0) {Toast.makeText(getApplicationContext(),"No se puede restar",Toast.LENGTH_SHORT).show(); return;}
+        count--;
+        txtResultado.setText(String.valueOf(count));
+    }
+    private void zoomMas(){
+        sizeText++;
+        txtResultado.setTextSize(sizeText);
+    }
+    private void zoomMenos(){
+        sizeText--;
+        txtResultado.setTextSize(sizeText);
+    }
+    private void ocultar(){
+        if(txtResultado.getVisibility()==View.VISIBLE){
+            txtResultado.setVisibility(View.INVISIBLE);
+        }else{
+            txtResultado.setVisibility(View.VISIBLE);
+        }
+    }
+    private void reset(){
+        count=0;
+        sizeText=30;
+        txtResultado.setText(String.valueOf(count));
+        txtResultado.setTextSize(sizeText);
+        txtResultado.setVisibility(View.VISIBLE);
     }
 }
